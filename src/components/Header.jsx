@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./css/Header.css";
 import { Link } from "react-router-dom";
 import profileImage from "../assets/image/image.png";
-import img from "../assets/image/img.jpg";
+import img from "../assets/image/Img.jpg";
 import img2 from "../assets/image/img3.jpg";
 import img3 from "../assets/image/img6.jpg";
 import img4 from "../assets/image/img4.jpeg";
