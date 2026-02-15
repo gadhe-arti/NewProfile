@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./css/Header.css";
+import { Link } from "react-router-dom";
 import profileImage from "../assets/image/image.png";
 import img from "../assets/image/img.png.jpg";
 import img2 from "../assets/image/img3.png.jpg";
 import img3 from "../assets/image/img6.png.jpg";
+import img4 from "../assets/image/img4.jpeg";
+import img5 from "../assets/image/img5.jpeg";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = () => {
@@ -199,14 +202,14 @@ export const Header = () => {
                 tech: ["Codegniter", "Html", "Css", "Js", "Bootstrap", "Mysql"],
                 link: "https://swapnapurtiudyogsamuh.in/ecommerce/",
                 desc: "Custom-trained LLM interface for developers to automate documentation.",
-                img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600",
+                img: img4,
               },
               {
                 title: "Cake ManageMent System ",
                 tech: ["Java", "Html", "Css", "Js", "Bootstrap", "Mysql"],
                 link: "#",
                 desc: "Custom-trained LLM interface for developers to automate documentation.",
-                img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600",
+                img: img5,
               },
 
               // ... more projects
@@ -239,7 +242,11 @@ export const Header = () => {
                     <a href="#" className="link-icon">
                       Code ↗
                     </a>
-                    <a href="#" className="link-button-glow">
+                    <a
+                      href={project.link}
+                      target="__blank"
+                      className="link-button-glow"
+                    >
                       Live Demo
                     </a>
                   </div>
